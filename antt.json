@@ -1,0 +1,74 @@
+{
+  "A": {
+    "Carga Geral": {},
+    "Carga Granel Pressurizada": {},
+    "Conteinerizada": {},
+    "Frigorificada ou Aquecida": {},
+    "Granel líquido": {},
+    "Granel sólido": {},
+    "Neogranel": {},
+    "Perigosa (carga geral)": {},
+    "Perigosa (conteinerizada)": {},
+    "Perigosa (Frigorificada ou Aquecida)": {},
+    "Perigosa (granel líquido)": {},
+    "Perigosa (granel sólido)": {}
+  },
+  "B": {
+    "Carga Geral": {},
+    "Carga Granel Pressurizada": {},
+    "Conteinerizada": {},
+    "Frigorificada ou Aquecida": {},
+    "Granel líquido": {},
+    "Granel sólido": {},
+    "Neogranel": {},
+    "Perigosa (carga geral)": {},
+    "Perigosa (conteinerizada)": {},
+    "Perigosa (Frigorificada ou Aquecida)": {},
+    "Perigosa (granel líquido)": {
+      "2": {"CCD": 3.6030, "CC": 199.94},
+      "3": {"CCD": 4.3718, "CC": 219.35},
+      "4": {"CCD": 5.0826, "CC": 245.67},
+      "5": {"CCD": 5.6181, "CC": 256.13},
+      "6": {"CCD": 6.2127, "CC": 266.10},
+      "7": {"CCD": 6.6654, "CC": 301.06},
+      "9": {"CCD": 7.5698, "CC": 329.26}
+    },
+    "Perigosa (granel sólido)": {
+      "2": {"CCD": 4.1645, "CC": 460.91},
+      "3": {"CCD": 5.5676, "CC": 659.06},
+      "4": {"CCD": 6.1264, "CC": 745.00},
+      "5": {"CCD": 6.7000, "CC": 780.00},
+      "6": {"CCD": 7.2100, "CC": 810.00},
+      "7": {"CCD": 7.6000, "CC": 890.00},
+      "9": {"CCD": 8.5000, "CC": 980.00}
+    }
+  },
+  "C": {
+    "Carga Geral": {},
+    "Carga Granel Pressurizada": {},
+    "Conteinerizada": {},
+    "Frigorificada ou Aquecida": {},
+    "Granel líquido": {},
+    "Granel sólido": {},
+    "Neogranel": {},
+    "Perigosa (carga geral)": {},
+    "Perigosa (conteinerizada)": {},
+    "Perigosa (Frigorificada ou Aquecida)": {},
+    "Perigosa (granel líquido)": {},
+    "Perigosa (granel sólido)": {}
+  },
+  "D": {
+    "Carga Geral": {},
+    "Carga Granel Pressurizada": {},
+    "Conteinerizada": {},
+    "Frigorificada ou Aquecida": {},
+    "Granel líquido": {},
+    "Granel sólido": {},
+    "Neogranel": {},
+    "Perigosa (carga geral)": {},
+    "Perigosa (conteinerizada)": {},
+    "Perigosa (Frigorificada ou Aquecida)": {},
+    "Perigosa (granel líquido)": {},
+    "Perigosa (granel sólido)": {}
+  }
+}
