@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Frete Mínimo ANTT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Frete Mínimo ANTT</h1>
+
+    <div class="form-group">
+      <label>Tipo de Carga</label>
+      <select id="tipoCarga">
+        <option value="">Selecione</option>
+        <option>Carga Geral</option>
+        <option>Carga Granel Pressurizada</option>
+        <option>Conteinerizada</option>
+        <option>Frigorificada ou Aquecida</option>
+        <option>Granel líquido</option>
+        <option>Granel sólido</option>
+        <option>Neogranel</option>
+        <option>Perigosa (carga geral)</option>
+        <option>Perigosa (conteinerizada)</option>
+        <option>Perigosa (Frigorificada ou Aquecida)</option>
+        <option>Perigosa (granel líquido)</option>
+        <option>Perigosa (granel sólido)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Número de Eixos*</label>
+      <select id="numEixos">
+        <option value="">Selecione</option>
+        <option>2</option><option>3</option><option>4</option><option>5</option>
+        <option>6</option><option>7</option><option>8</option><option>9</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Forma de Inserir Distância</label>
+      <select id="modoDistancia" onchange="alternarModo()">
+        <option value="km">Informar distância (km)</option>
+        <option value="cidade">Cidade/Estado</option>
+        <option value="coordenada">Latitude/Longitude</option>
+      </select>
+    </div>
+
+    <div id="entradaDistancia">
+      <label>Distância (km)</label>
+      <input type="number" id="distanciaKm" placeholder="Ex: 550">
+    </div>
+
+    <div id="entradaCidade" style="display:none;">
+      <label>Origem</label>
+      <input type="text" id="origem" placeholder="Ex: São Paulo, SP">
+      <label>Destino</label>
+      <input type="text" id="destino" placeholder="Ex: Curitiba, PR">
+    </div>
+
+    <div id="entradaCoord" style="display:none;">
+      <label>Latitude Origem</label>
+      <input type="number" id="lat1" step="0.000001" placeholder="-23.5505">
+      <label>Longitude Origem</label>
+      <input type="number" id="lon1" step="0.000001" placeholder="-46.6333">
+      <label>Latitude Destino</label>
+      <input type="number" id="lat2" step="0.000001" placeholder="-25.4284">
+      <label>Longitude Destino</label>
+      <input type="number" id="lon2" step="0.000001" placeholder="-49.2733">
+    </div>
+
+    <div class="opcoes">
+      <label>É composição veicular?</label>
+      <button onclick="alternar(this)" id="compBtn">Não</button>
+
+      <label>É Alto Desempenho?</label>
+      <button onclick="alternar(this)" id="altoBtn">Não</button>
+
+      <label>Retorno Vazio?</label>
+      <button onclick="alternar(this)" id="retornoBtn">Não</button>
+    </div>
+
+    <button class="calcular" onclick="calcularFrete()">Calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
